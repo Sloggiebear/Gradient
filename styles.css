@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +9,7 @@
 body {
   font-family: Open Sans, sans-serif;
   color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#c04338), color-stop(purple), color-stop(#6252ee), to(#05676e));
-  background-image: linear-gradient(90deg, #c04338, purple, #6252ee, #05676e);
+  background-image: linear-gradient(30deg, #c04338, purple, #6252ee, #05676e);
   background-size: 500%;
   min-height: 100vh;
   -webkit-animation: bg-animation 50s infinite;
@@ -81,25 +80,19 @@ p {
   padding-top: 10px;
 }
 
-.ted,
 .button {
-  background-color: #afafaf;
-  color: #5e5e5e;
+  background-color: rgba(41, 41, 41, 0.5);
+  color: #ffffff;
   display: inline-block;
   padding: 17px 25px;
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 300;
   font-size: 1.1em;
+  font-style: italic;
 }
 
-.active,
-.numgrade-button:hover,
-.numgrade-button:active,
-.ted:hover,
-.ted:active,
-.button:hover,
-.button:active {
-  background-color: #2b2b2b;
+.button:hover {
+  background-color: rgba(41, 41, 41, 0.75);
   color: #ffffff;
   font-weight: 800;
 }
@@ -107,15 +100,13 @@ p {
 .gradelist {
   display: block;
   margin: 15px auto;
-  height: 4em;
   border: 0px;
   background: #ffffff;
   width: 100%;
-  max-width: 200px;
-  padding: 8px 12px;
+  max-width: 265px;
+  padding: 10px 12px;
   -webkit-box-shadow: 0px 10px 25px #6e6c6c98;
           box-shadow: 0px 10px 25px #6e6c6c98;
-  text-indent: 30px;
   color: #6d6d6d;
   font-style: italic;
 }
@@ -125,11 +116,11 @@ p {
 }
 
 footer {
+  margin-top: 40px;
   bottom: 0px;
   width: 100%;
-  background: #292929;
-  color: lightgray;
-  font-size: 0.6em;
+  background: rgba(41, 41, 41, 0.75);
+  color: #ffffff;
   padding: 8px 0px;
 }
 
@@ -144,9 +135,8 @@ footer a:hover {
 
 .subfooter {
   width: 100%;
-  background: #161616;
-  color: lightgray;
-  font-size: 0.6em;
+  background: rgba(22, 22, 22, 0.4);
+  color: #ffffff;
   padding: 8px 0px;
 }
 /*# sourceMappingURL=styles.css.map */

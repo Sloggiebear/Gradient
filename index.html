@@ -41,37 +41,42 @@
                   <form id="setgrades"></form>
               <div class="clearfix"></div>
               </div>
+              <a href="javascript:sumGrades()" id="dothething" class="button">Calculate!</a>
+
           </div>
     
-    <a href="javascript:sumGrades()" id="dothething" class="button">Calculate!</a>
     
         <!-- Outputted results -->
         <div id="themath">
-              <a href="javascript:resetForm()" id="reset" class="button">Reset</a>
+
               <h3>RESULT:</h3>
               <p id="result"></p>
               
               <h3>YOU SELECTED:</h3>
               <ul id="youselected">
               </ul>
-              
-              <h3>THE MATH:</h3>
-              <ul id="enteredgrades"></ul>
-              
-              <h6>SUM</h6>
-              <span id="total"></span>
+              <a href="#" onClick="classToggle(nerd)">Show me the math bébé!</a>
+              <div id="nerd" class="hidden">
+                <h3>THE MATH:</h3>
+                <ul id="enteredgrades"></ul>
+                
+                <h6>SUM</h6>
+                <span id="total"></span>
+  
+                <h6>DIVIDED BY</h6>
+                <span id="num_grades"></span>
+  
+                <h6>AVERAGE</h6>
+                <span id="average"></span>
+  
+                <h6>ROUNDED</h6>
+                <span id="rounded"></span>
+  
+                <h6>AS ALPHA</h6>
+                <span id="output"></span>
+              </div>
 
-              <h6>DIVIDED BY</h6>
-              <span id="num_grades"></span>
-
-              <h6>AVERAGE</h6>
-              <span id="average"></span>
-
-              <h6>ROUNDED</h6>
-              <span id="rounded"></span>
-
-              <h6>AS ALPHA</h6>
-              <span id="output"></span>
+              <a href="javascript:resetForm()" id="reset" class="button">Reset</a>
         </div> <!-- end of "themath" -->
       </div>
     </div>
