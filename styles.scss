@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,800&display=swap");
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  background-image: linear-gradient(90deg, #ee6352, purple, #6252ee, #05676e);
+  background-size: 500%;
+  min-height: 100vh;
+  animation: bg-animation 50s infinite;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: italic;
+  text-shadow: 4px 4px #000000;
+  color: #ffffff;
+}
+
+.numgrade-button,
+.ted,
+.button {
+  background-color: #afafaf;
+  color: #5e5e5e;
+  display: inline-block;
+  padding: 17px 25px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.1em;
+  border-radius: 30px;
+}
+
+.active,
+.numgrade-button:hover,
+.numgrade-button:active,
+.ted:hover,
+.ted:active,
+.button:hover,
+.button:active {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.gradelist {
+  display: block;
+  margin: 15px auto;
+  height: 4em;
+  border: 0px;
+  background: #ffffff;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 200px;
+  padding: 8px 12px;
+  box-shadow: 0px 10px 25px #6e6c6c98;
+  text-indent: 30px;
+  color: #6d6d6d;
+  font-style: italic;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  background: rgb(41, 41, 41);
+  color: rgb(211, 211, 211);
+  font-size: 0.6em;
+  padding: 8px 0px;
+
+  a {
+    text-decoration: none;
+    color: #5e5e5e;
+
+    &:hover {
+      color: #afafaf;
+    }
+  }
+}
+
+.subfooter {
+  width: 100%;
+  background: rgb(22, 22, 22);
+  color: rgb(211, 211, 211);
+  font-size: 0.6em;
+  padding: 8px 0px;
+}

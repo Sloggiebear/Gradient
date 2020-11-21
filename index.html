@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <title>Gradient - The Alpha Grade Calculator</title>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript" src="grade_calculator.js"></script>
+  </head>
+
+  <body>
+  <div class="container">
+    <h1 class="logo">Gradient</h1>    
+    <p>Select the number of grades you want to get an average of:</p>
+    
+    <!-- Select the number of grades to get average of -->
+    <div id="numgrades">
+      <a href="#" class="numgrade-button" id="1" onclick="insult()">1</a>
+      <a href="#" class="numgrade-button" id="2" onclick="getNumGrades(2)">2</a>
+      <a href="#" class="numgrade-button" id="3" onclick="getNumGrades(3)">3</a>
+      <a href="#" class="numgrade-button active" id="4" onclick="getNumGrades(4)">4</a>
+    </div>
+    
+      <!-- Main content (Grades container and results container with display css setting switched by javascript) -->
+      <div id ="maincontent">
+          
+        <div id="insult" class="hidden">
+          <p>
+            You need to get the average of one grade?
+            Dougal, how did you get into college? Was it like, 
+            collect twelve crisp packets and become a lecturer?
+          </p>
+          <a href="https://www.youtube.com/watch?v=nOWR2LPZ-TI" class="ted" target="_blank">Classic Ted</a>
+        </div>
+
+          <!-- Grades to be calculated -->
+          <div id="calc">
+              <div id="grades">
+                  <form id="setgrades"></form>
+              <div class="clearfix"></div>
+              </div>
+          </div>
+    
+    <a href="javascript:sumGrades()" id="dothething" class="button">Calculate!</a>
+    
+        <!-- Outputted results -->
+        <div id="themath">
+              <a href="javascript:resetForm()" id="reset" class="button">Reset</a>
+              <h3>RESULT:</h3>
+              <p id="result"></p>
+              
+              <h3>YOU SELECTED:</h3>
+              <ul id="youselected">
+              </ul>
+              
+              <h3>THE MATH:</h3>
+              <ul id="enteredgrades"></ul>
+              
+              <h6>SUM</h6>
+              <span id="total"></span>
+
+              <h6>DIVIDED BY</h6>
+              <span id="num_grades"></span>
+
+              <h6>AVERAGE</h6>
+              <span id="average"></span>
+
+              <h6>ROUNDED</h6>
+              <span id="rounded"></span>
+
+              <h6>AS ALPHA</h6>
+              <span id="output"></span>
+        </div> <!-- end of "themath" -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!-- Header with logo and menu -->
+    <a href="#" id="intro" onClick="classToggle(about)">About Gradient</a>
+
+    <div id="about" class="hidden">
+      <h3>About Gradient</h3>
+      <p>Gradey is based on alpha grade calculation points used by UCD and NCAD. It can be used to get the total average grade based on two, 
+        three or four assessment criteria.</p>
+
+      <h3>Disclaimer</h3>
+      <p>
+        While every effort has been made to ensure the reliabilty of Gradient there is no guarantee the information presented on this website 
+        is accurate or up to date. By using this website you accept that you do so at your own risk.  No liability is accepted by the creator
+        of this site for any errors, inaccuaracies or mistakes arising through its use. The code is open source and can be viewed on Github. 
+        Feel free to suggest edits to improve it.
+      </p>
+    </div>
+    <div class="subfooter">
+      © Logan McLain | <a href="http://www.loganmclain.com" target="_blank">Design and code by this fuckface</a>
+    </div>
+  </footer>
+
+
+  <script>
+  document.onload = getNumGrades(4);
+  </script>
+
+  </body>
+</html>
