@@ -10,15 +10,17 @@
 
   <body>
   <div class="container">
-    <h1 class="logo">Gradient</h1>    
-    <p>Select the number of grades you want to get an average of:</p>
+    <div class="header">
+      <h1 class="logo">Gradient</h1>    
+      <p>Select the number of grades to average:</p>
     
-    <!-- Select the number of grades to get average of -->
-    <div id="numgrades">
-      <a href="#" class="numgrade-button" id="1" onclick="insult()">1</a>
-      <a href="#" class="numgrade-button" id="2" onclick="getNumGrades(2)">2</a>
-      <a href="#" class="numgrade-button" id="3" onclick="getNumGrades(3)">3</a>
-      <a href="#" class="numgrade-button active" id="4" onclick="getNumGrades(4)">4</a>
+      <!-- Select the number of grades to get average of -->
+      <div id="numgrades">
+        <a href="#" class="numgrade-button" id="1" onclick="insult()">1</a>
+        <a href="#" class="numgrade-button" id="2" onclick="getNumGrades(2)">2</a>
+        <a href="#" class="numgrade-button" id="3" onclick="getNumGrades(3)">3</a>
+        <a href="#" class="numgrade-button active" id="4" onclick="getNumGrades(4)">4</a>
+      </div>    
     </div>
     
       <!-- Main content (Grades container and results container with display css setting switched by javascript) -->

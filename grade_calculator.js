@@ -60,7 +60,7 @@ function listGrades(numGrades) {
 			/// Create a default selected option for each select element and set it to disabled and hidden
 			var defaultopt = document.createElement('option');
 			defaultopt.value = "";
-			defaultopt.text = "Select a aaGrade";
+			defaultopt.text = "Select a Grade";
 			defaultopt.selected = true;
 			defaultopt.hidden = true;
 			defaultopt.disabled = true;

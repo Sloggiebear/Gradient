@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: inherit;
+}
+
 body {
-  padding: 0px;
-  margin: 0px;
-  font-size: 1.2rem;
-  text-align: center;
   font-family: Open Sans, sans-serif;
-  background-image: linear-gradient(90deg, #ee6352, purple, #6252ee, #05676e);
+  color: #ffffff;
+  background-image: linear-gradient(90deg, #c04338, purple, #6252ee, #05676e);
   background-size: 500%;
   min-height: 100vh;
   animation: bg-animation 50s infinite;
+  text-align: center;
 }
 
 @keyframes bg-animation {
@@ -23,6 +28,9 @@ body {
   }
 }
 
+p {
+  margin-bottom: 15px;
+}
 .visible {
   display: block;
 }
@@ -31,15 +39,32 @@ body {
   display: none;
 }
 
+.header {
+  background-color: rgba(41, 41, 41, 0.61);
+  padding: 30px 30px 30px 20px;
+}
 .logo {
+  font-size: 2.5em;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: italic;
   text-shadow: 4px 4px #000000;
   color: #ffffff;
+  margin-bottom: 15px;
 }
 
-.numgrade-button,
+.numgrade-button {
+  background-color: #ffffff;
+  color: #5e5e5e;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.1em;
+  height: 40px;
+  width: 50px;
+  margin: 7px;
+  padding-top: 10px;
+}
+
 .ted,
 .button {
   background-color: #afafaf;
@@ -49,7 +74,6 @@ body {
   text-decoration: none;
   font-weight: 800;
   font-size: 1.1em;
-  border-radius: 30px;
 }
 
 .active,
@@ -61,6 +85,7 @@ body {
 .button:active {
   background-color: #2b2b2b;
   color: #ffffff;
+  font-weight: 800;
 }
 
 .gradelist {
@@ -69,7 +94,6 @@ body {
   height: 4em;
   border: 0px;
   background: #ffffff;
-  border-radius: 25px;
   width: 100%;
   max-width: 200px;
   padding: 8px 12px;
