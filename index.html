@@ -32,7 +32,7 @@
             Dougal, how did you get into college? Was it like, 
             collect twelve crisp packets and become a lecturer?
           </p>
-          <a href="https://www.youtube.com/watch?v=nOWR2LPZ-TI" class="ted" target="_blank">Classic Ted</a>
+          <a href="https://www.youtube.com/watch?v=nOWR2LPZ-TI" class="button" target="_blank"><img src="images/youtube.svg" class="button-icon" /> Classic Ted</a>
         </div>
 
           <!-- Grades to be calculated -->
@@ -49,15 +49,17 @@
         <!-- Outputted results -->
         <div id="themath">
 
-              <h3>RESULT:</h3>
-              <p id="result"></p>
+              <div class="dark-box">
+                <h2>RESULT:</h2>
+                <p id="result" class="lookwhatigot"></p>
+              </div>
               
-              <h3>YOU SELECTED:</h3>
-              <ul id="youselected">
+              <p>You selected:</p>
+              <ul id="youselected"  class="youselected">
               </ul>
-              <a href="#" onClick="classToggle(nerd)">Show me the math bébé!</a>
-              <div id="nerd" class="hidden">
-                <h3>THE MATH:</h3>
+              <a href="#" onClick="classToggle(nerd)" class="expandable-link">Show me the math bébé!</a>
+              <div id="nerd" class="themaths hidden">
+                <h2>THE MATH:</h2>
                 <ul id="enteredgrades"></ul>
                 
                 <h6>SUM</h6>
@@ -80,29 +82,32 @@
         </div> <!-- end of "themath" -->
       </div>
     </div>
+
+    <footer>
+      <!-- Header with logo and menu -->
+      <a href="#" id="intro" onClick="classToggle(about)">About Gradient</a>
+  
+      <div id="about" class="hidden">
+        <h3>About Gradient</h3>
+        <p>Gradey is based on alpha grade calculation points used by UCD and NCAD. It can be used to get the total average grade based on two, 
+          three or four assessment criteria.</p>
+  
+        <h3>Disclaimer</h3>
+        <p>
+          While every effort has been made to ensure the reliabilty of Gradient there is no guarantee the information presented on this website 
+          is accurate or up to date. By using this website you accept that you do so at your own risk.  No liability is accepted by the creator
+          of this site for any errors, inaccuaracies or mistakes arising through its use. The code is open source and can be viewed on Github. 
+          Feel free to suggest edits to improve it.
+        </p>
+      </div>
+      <div class="subfooter">
+        © Logan McLain | <a href="http://www.loganmclain.com" target="_blank">Design and code by this fuckface</a>
+      </div>
+    </footer>
+
   </div>
 
-  <footer>
-    <!-- Header with logo and menu -->
-    <a href="#" id="intro" onClick="classToggle(about)">About Gradient</a>
 
-    <div id="about" class="hidden">
-      <h3>About Gradient</h3>
-      <p>Gradey is based on alpha grade calculation points used by UCD and NCAD. It can be used to get the total average grade based on two, 
-        three or four assessment criteria.</p>
-
-      <h3>Disclaimer</h3>
-      <p>
-        While every effort has been made to ensure the reliabilty of Gradient there is no guarantee the information presented on this website 
-        is accurate or up to date. By using this website you accept that you do so at your own risk.  No liability is accepted by the creator
-        of this site for any errors, inaccuaracies or mistakes arising through its use. The code is open source and can be viewed on Github. 
-        Feel free to suggest edits to improve it.
-      </p>
-    </div>
-    <div class="subfooter">
-      © Logan McLain | <a href="http://www.loganmclain.com" target="_blank">Design and code by this fuckface</a>
-    </div>
-  </footer>
 
 
   <script>

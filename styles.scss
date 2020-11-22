@@ -29,8 +29,23 @@ body {
   }
 }
 
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
 p {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.container {
+  height: 100vh;
 }
 
 .visible {
@@ -41,31 +56,46 @@ p {
   display: none;
 }
 
+.active {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.4);
+  color: #6d6d6d !important;
+  font-weight: 800 !important;
+}
+
 .header {
   background-color: rgba(41, 41, 41, 0.61);
   padding: 30px 30px 30px 20px;
+  margin-bottom: 30px;
 }
 
 .logo {
   font-size: 2.5em;
   text-transform: uppercase;
   font-style: italic;
-  text-shadow: 4px 4px #000000;
   color: #ffffff;
   margin-bottom: 15px;
+  text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);
 }
 
 .numgrade-button {
-  background-color: #ffffff;
-  color: #5e5e5e;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   display: inline-block;
   text-decoration: none;
   font-weight: 100;
   font-size: 1.1em;
-  height: 40px;
+  height: 35px;
   width: 50px;
   margin: 7px;
-  padding-top: 10px;
+  padding-top: 15px;
+
+  &:hover,
+  &:active {
+    background-color: #ffffff;
+    color: #6d6d6d;
+    font-weight: 800;
+  }
 }
 
 .button {
@@ -74,28 +104,39 @@ p {
   display: inline-block;
   padding: 17px 25px;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.1em;
   font-style: italic;
+  width: 100%;
+  max-width: 215px;
+
+  img {
+    width: 40px;
+    height: auto;
+    bottom: -15px;
+    position: relative;
+    padding-right: 10px;
+  }
 }
 
-.button:hover {
+.button:hover,
+.button:active {
   background-color: rgba(41, 41, 41, 0.75);
   color: #ffffff;
-  font-weight: 800;
 }
 
 .gradelist {
   display: block;
-  margin: 15px auto;
+  margin: 28px auto;
   border: 0px;
   background: #ffffff;
   width: 100%;
   max-width: 265px;
-  padding: 10px 12px;
-  box-shadow: 0px 10px 25px #6e6c6c98;
+  padding: 15px 12px;
   color: #6d6d6d;
   font-style: italic;
+  margin-bottom: 15px;
+  font-size: 1.2em;
 
   &:hover,
   &:focus {
@@ -103,13 +144,65 @@ p {
   }
 }
 
+.dark-box {
+  background-color: rgba(41, 41, 41, 0.5);
+  height: 185px;
+  width: 100%;
+  max-width: 215px;
+  margin: 10px auto;
+  position: relative;
+  padding: 20px;
+}
+
+.lookwhatigot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6em;
+  font-weight: 800;
+  text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);
+}
+
+.youselected {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+
+  li {
+    padding: 0px 20px;
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+}
+
+.expandable-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 20px 0px;
+  display: block;
+
+  &:hover,
+  &:active {
+    text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.allthemath {
+  display: grid;
+}
+// Footer Styles
+
 footer {
   margin-top: 40px;
   bottom: 0px;
   width: 100%;
   background: rgba(41, 41, 41, 0.75);
   color: #ffffff;
-  padding: 8px 0px;
+  padding: 15px 0px 0px 0px;
 
   a {
     text-decoration: none;
