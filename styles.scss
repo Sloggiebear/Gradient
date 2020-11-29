@@ -45,7 +45,7 @@ p {
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
 }
 
 .visible {
@@ -178,21 +178,19 @@ p {
 }
 
 .expandable-link {
-  color: #ffffff;
+  color: #000000b0;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1.1em;
   font-style: italic;
   padding: 20px 0px;
   display: block;
-
-  &:hover,
-  &:active {
-    text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);
-  }
 }
 
 .allthemath {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 220px;
+  margin: auto;
 }
 // Footer Styles
 

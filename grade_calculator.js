@@ -133,7 +133,7 @@ function totalGrades(resultsArray) {
 		document.getElementById("enteredgrades").innerHTML = "" ;
 		var entgrades = document.getElementById("enteredgrades");
 		for (x = 0; x < resultsArray.length; x++) {
-				var li = document.createElement("li");
+				var li = document.createElement("div");
 				li.appendChild(document.createTextNode(convertGrade(resultsArray[x])));
 				entgrades.appendChild(li);
 					
