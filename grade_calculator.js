@@ -74,8 +74,8 @@ function listGrades(numGrades) {
 function clearGrades() {
 	var select = document.getElementById("setnumgrades");
 	var numGrades = document.querySelector('.active').innerHTML;
-	for (step = 0; step < numGrades; step++) {
-		var x = "criteria" + (step + 1);
+	for (i = 0; i < numGrades; i++) {
+		var x = "criteria" + (i + 1);
 		document.getElementById(x).selectedIndex = "-1";
 	}
 }
@@ -129,20 +129,27 @@ function totalGrades(resultsArray) {
 			ul.appendChild(li);
 		}
 		
-		//Lists the selected values in a table with their numerical equivilent
+		//Lists the selected values in a grid with their numerical equivilent
 		document.getElementById("enteredgrades").innerHTML = "" ;
 		var entgrades = document.getElementById("enteredgrades");
 		for (x = 0; x < resultsArray.length; x++) {
 				var li = document.createElement("div");
 				li.appendChild(document.createTextNode(convertGrade(resultsArray[x])));
 				entgrades.appendChild(li);
-					
-		}
+			}
+
+		document.getElementById("gradesasmarks").innerHTML = "" ;
+		var gradesas = document.getElementById("gradesasmarks");
+		for (x = 0; x < resultsArray.length; x++) {
+			var gi = document.createElement("div");
+			gi.appendChild(document.createTextNode(resultsArray[x]));
+			gradesas.appendChild(gi);
+			}
 		
 		//Lists the rest of the factors used in the calculation of the average overall grade
-		document.getElementById("total").innerHTML = total ;
-		document.getElementById("num_grades").innerHTML = numGrades ;
-		document.getElementById("average").innerHTML = averageResult;
+		document.getElementById("total").innerHTML = total.toFixed(2);
+		document.getElementById("num_grades").innerHTML = numGrades;
+		document.getElementById("average").innerHTML = averageResult.toFixed(3);
 		document.getElementById("rounded").innerHTML = roundedResult;
 		document.getElementById("output").innerHTML = output;
 		

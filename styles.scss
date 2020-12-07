@@ -48,6 +48,11 @@ p {
   height: 100%;
 }
 
+#maincontent {
+  max-width: 350px;
+  margin: auto;
+}
+
 .visible {
   display: block;
 }
@@ -184,14 +189,27 @@ p {
   font-style: italic;
   padding: 20px 0px;
   display: block;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 7px solid transparent;
+    border-left: 7px solid #23232396;
+    position: absolute;
+    right: 60px;
+    bottom: 23px;
+  }
 }
 
 .allthemath {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 220px;
-  margin: auto;
+  margin: 20px auto;
 }
+
 // Footer Styles
 
 footer {
