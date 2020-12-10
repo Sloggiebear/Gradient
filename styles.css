@@ -118,7 +118,6 @@ p {
 .button {
   background-color: rgba(41, 41, 41, 0.5);
   color: #ffffff;
-  display: inline-block;
   padding: 17px 25px;
   text-decoration: none;
   font-weight: 500;
@@ -126,12 +125,21 @@ p {
   font-style: italic;
   width: 100%;
   max-width: 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
 }
 
 .button img {
   width: 40px;
   height: auto;
-  bottom: -15px;
   position: relative;
   padding-right: 10px;
 }
@@ -207,7 +215,7 @@ p {
   font-size: 1.1em;
   font-style: italic;
   padding: 20px 0px;
-  display: block;
+  display: inline-block;
   position: relative;
 }
 
@@ -218,7 +226,7 @@ p {
   border: 7px solid transparent;
   border-left: 7px solid #23232396;
   position: absolute;
-  right: 60px;
+  right: -20px;
   bottom: 23px;
 }
 
@@ -231,28 +239,19 @@ p {
   margin: 20px auto;
 }
 
-footer {
+.footer {
   margin-top: 40px;
-  bottom: 0px;
-  width: 100%;
-  background: rgba(41, 41, 41, 0.75);
-  color: #ffffff;
+  font-size: 0.8em;
+  color: #d4d4d4;
   padding: 15px 0px 0px 0px;
 }
 
-footer a {
+.footer a {
   text-decoration: none;
-  color: #5e5e5e;
+  color: #d4d4d4;
 }
 
-footer a:hover {
-  color: #afafaf;
-}
-
-.subfooter {
-  width: 100%;
-  background: rgba(22, 22, 22, 0.4);
+.footer a:hover {
   color: #ffffff;
-  padding: 8px 0px;
 }
 /*# sourceMappingURL=styles.css.map */
