@@ -236,7 +236,35 @@ p {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   max-width: 220px;
-  margin: 20px auto;
+  margin: 20px 40px 20px auto;
+  text-align: left;
+}
+
+.modal {
+  z-index: 10;
+  background-image: linear-gradient(30deg, #c04338, purple, #6252ee, #05676e);
+  background-size: 500%;
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-animation: bg-animation 50s infinite;
+          animation: bg-animation 50s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  margin: auto;
+  max-width: 400px;
+  padding-top: 40px;
+}
+
+.modal-content p {
+  text-align: justify;
+}
+
+.modal-content h3 {
+  padding: 30px 0px 15px 0px;
 }
 
 .footer {
