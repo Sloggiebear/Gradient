@@ -1,10 +1,12 @@
-# Grade-Calculator
-Alpha Grade Average Calculator 
+# Gradient
+
+Alpha Grade Average Calculator
 
 Full details can be found at:
 http://loganmclain.com/alpha-grade-average-calculator/
 
 A working version can be found at:
-http://gradey.loganmclain.com/
+http://gradient.loganmclain.com/
 
-<img src="http://loganmclain.com/wp-content/uploads/logan-mc-lain-gradey-screen.jpg" alt="Gradey Alpha Grade Average Calculator Data Entry">
+<img src="http://amberandemerald.com/wp-content/uploads/2020/12/Gradient-grade-calculator-1.png" alt="Gradient">
+<img src="http://amberandemerald.com/wp-content/uploads/2020/12/Gradient-grade-calculator-2.png" alt="Gradient">

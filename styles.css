@@ -267,6 +267,23 @@ p {
   padding: 30px 0px 15px 0px;
 }
 
+.modal-content a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal-content a:hover {
+  color: #e7e7e7;
+  text-decoration: underline;
+}
+
+.modal-content a.button,
+.modal-content a.button:hover {
+  text-decoration: none;
+  font-weight: 100;
+}
+
 .footer {
   margin-top: 40px;
   font-size: 0.8em;
@@ -281,5 +298,64 @@ p {
 
 .footer a:hover {
   color: #ffffff;
+}
+
+.shake {
+  -webkit-animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@-webkit-keyframes shake {
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

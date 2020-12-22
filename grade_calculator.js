@@ -19,6 +19,7 @@ function getNumGrades(value){
 
 function insult() {
 	document.getElementById("dothething").className = "hidden";
+	document.getElementById("themath").style.display = "none";
 	classToggle(document.getElementById("insult"));
 	document.getElementById("grades").innerHTML = "";
 }
@@ -84,10 +85,24 @@ function clearGrades() {
 function sumGrades() {
 	var select = document.getElementById("setnumgrades");
 	var numGrades = document.querySelector('.active').innerHTML;
-	var resultsArray = []
+	var resultsArray = []	
+
+	//Lopp through the select elements and shake any that have no grade selected
+	for (i = 0; i < numGrades; i++) {
+		var x = "criteria" + (i + 1);
+		var select_id = document.getElementById(x);
+		var selected_result = select_id.options[select_id.selectedIndex].value;
+		console.log("Select value is:", selected_result);
+		if (selected_result == "") {
+			select_id.classList.remove("shake");
+			void select_id.offsetWidth;
+			select_id.classList.add("shake");
+		}
+	}
+
 	try {
-			for (step = 0; step < numGrades; step++) {
-			var x = "criteria" + (step + 1);
+			for (i = 0; i < numGrades; i++) {
+			var x = "criteria" + (i + 1);
 			var select_id = document.getElementById(x);
 			var selected_result = select_id.options[select_id.selectedIndex].value;
 			resultsArray.push(parseFloat(selected_result));
@@ -159,6 +174,11 @@ function totalGrades(resultsArray) {
 	
 	clearGrades();
 	}
+}
+
+function resetButton() {
+	var x = document.querySelector('.active').innerHTML;
+	getNumGrades(x);
 }
 
 function setActive() {
